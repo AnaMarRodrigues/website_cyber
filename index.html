@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Nostalgia Trip</title>
+    <!-- estilos-->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+    <link rel="stylesheet" href="style.css">
+    <!--cursor-->
+<style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd/3FMXf9xTF3/cUxd/wAAAAAAAAAAAAAAAAAAAAAAAAAANl2S/zZdkv82XZL/Nl2S/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/89vL//Pby//z28v/89vL/cUxd/wAAAAAAAAAAAAAAADZdkv96yP7/esj+/3rI/v96yP7/Nl2S/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf9xTF3/28PQ//z28v/89vL/cUxd/3FMXf9xTF3/cUxd/wAAAAA2XZL/esj+/3rI/v96yP7/esj+/3rI/v82XZL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3//Pby/3FMXf/bw9D//Pby//z28v9xTF3/cUxd/3FMXf9xTF3/Nl2S/3rI/v96yP7/esj+/3rI/v96yP7/esj+/zZdkv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3/cUxd/3FMXf9xTF3/cUxd//z28v/79vX/cUxd/9vD0P/89vL//Pby/3FMXf9xTF3/cUxd/zZdkv96yP7/esj+/3rI/v96yP7/esj+/3Ko8v9Vhsn/Nl2S/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3/cUxd/9vD0P/bw9D/28PQ//v29f9xTF3//Pby//v29f9xTF3/28PQ//z28v/89vL/cUxd/3FMXf82XZL/VYbJ/3Ko8v96yP7/esj+/3rI/v9yqPL/VYbJ/zZdkv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3/cUxd/9vD0P/89vL//Pby//v29f/79vX/+/b1/3FMXf/89vL//Pby//v29f9xTF3//Pby//z28v/89vL/cUxd/zZdkv9Vhsn/cqjy/3Ko8v93rff/cqjy/1WGyf82XZL/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd/9vD0P/89vL/+/b1//v29f/79vX/+/b1//v29f/79vX/cUxd//z28v/89vL//Pby/3FMXf/89vL//Pby//z28v9xTF3/Nl2S/1WGyf9Vhsn/cqjy/3Ko8v9Vhsn/Nl2S/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3/28PQ//z28v/79vX/+/b1//v29f/79vX/+/b1//v29f9xTF3//Pby//z28v/79vX//Pby//z28v/89vL//Pby//z28v9xTF3/Nl2S/1WGyf9Vhsn/VYbJ/zZdkv8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/bw9D//Pby//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f9xTF3//Pby//z28v/89vL//Pby//z28v/89vL//Pby//z28v9xTF3/Nl2S/zZdkv82XZL/cUxd/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd//z28v/89vL/+/b1//v29f/79vX/+/b1//v29f/79vX/+/b1/3FMXf/89vL//Pby//z28v/89vL//Pby//z28v/89vL//Pby//z28v9xTF3/cUxd/3FMXf9xTF3/cUxd/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3//Pby//z28v9xTF3/+/b1//v29f/79vX/+/b1//v29f/79vX/+/b1/3FMXf/89vL//Pby//z28v/89vL//Pby//z28v/89vL//Pby//z28v9xTF3/cUxd/3pVZf96VWX/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/89vL/cUxd//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f/79vX/cUxd//z28v/89vL//Pby//z28v/89vL//Pby//z28v/89vL//Pby/9vD0P+ziJ//s4if/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/58/P/+/b1//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f/79vX/cUxd//z28v/89vL//Pby//z28v/89vL//Pby/3FMXf9xTF3/s4if/7OIn/9xTF3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3//Pby//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f/79vX/cUxd//z28v/89vL//Pby//z28v/89vL/28PQ/3FMXf9xTF3/cUxd/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd//z28v/89vL/+/b1//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f/79vX/+/b1//v29f/79vX/cUxd/3FMXf/89vL//Pby/9vD0P+ziJ//s4if/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/89vL//Pby//v29f/79vX/+/b1/9vD0P+ziJ//+/b1//v29f/79vX/28PQ//v29f/79vX/+/b1//v29f/79vX/+/b1/3FMXf/bw9D/s4if/7OIn/9xTF3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3//Pby//z28v/79vX/+/b1//v29f/bw9D/s4if/3FMXf/89vL/28PQ/9vD0P+ziJ//+/b1//v29f/79vX/+/b1//v29f/79vX/28PQ/3FMXf9xTF3/cUxd/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd//z28v/89vL/+/b1//v29f/79vX/28PQ/7OIn/9xTF3/cUxd/9vD0P+ziJ//s4if/3FMXf/79vX/+/b1/9vD0P/79vX/+/b1//v29f/bw9D/s4if/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3//Pby//v29f/79vX/+/b1/9vD0P+ziJ//cUxd/wAAAAAAAAAAcUxd/3FMXf9xTF3/+/b1/9vD0P/bw9D/s4if//v29f/79vX/28PQ/7OIn/9xTF3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/89vL/+/b1//v29f/bw9D/s4if/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf/bw9D/s4if/7OIn/9xTF3/+/b1/9vD0P+ziJ//cUxd/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd//v29f/79vX/28PQ/7OIn/9xTF3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFMXf9xTF3/cUxd//v29f/bw9D/s4if/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3/+/b1/9vD0P+ziJ//cUxd/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcUxd/3FMXf9xTF3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABxTF3/cUxd/3FMXf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////////////8Ph//+BwP/+AID//AAA/4AAAP4AAAH4AAAD8AAAB/AAAA/wAAAH8AAAB/AAAAfwAAAH+AAAD/AAAB/gAAA/wAAAf4AAAP8AAAH/AMAD/wHwB/8D+A//B/8f/4////8='), auto; }</style>
+   
+    <!--javascript-->
+    <script src="java.js"></script>
+    <script src="musica.js"></script>
+
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+
+    <!--para abrir link para os trabalhos e botoes funcionais da template do windows xp
+    este script está aqui já que é curto -->
+
+    <script>
+        //abrir links
+
+        function openWin1() {
+          window.open("https://drive.google.com/drive/folders/1Uw3Cs6zYX5th-cGefViid4hGyyVqkNTJ?usp=drive_link");
+        }
+
+        function openWin2() {
+          window.open("https://www.instagram.com/nana_galactea/");
+        }
+
+        function openWin3() {
+          window.open("https://www.figma.com/file/cxjDrB3DD6bxHRHlb1YPsv/Projeto-DI-Collabe-manipulation?type=design&node-id=232%3A331&mode=dev");
+        }
+
+        //fechar janelas
+        function closeWin(){
+            document.querySelector('#windowpopup').style.display = 'none';
+        }
+
+        function closeWin2(){
+            document.querySelector('#window1').style.display = 'none';
+        }
+
+
+        function closeWin3(){
+            document.querySelector('#window2').style.display = 'none';
+        }
+
+        function closeWin4(){
+            document.querySelector('#window3').style.display = 'none';
+        }
+
+            //refresh da pagina
+        function refreshPage(){
+    window.location.reload();
+            } 
+     </script>
+
+     <!--script para o draggable o resto está no java.js-->
+
+     <script type="module">
+        import 'https://cdn.interactjs.io/v1.9.20/auto-start/index.js'
+        import 'https://cdn.interactjs.io/v1.9.20/actions/drag/index.js'
+        import 'https://cdn.interactjs.io/v1.9.20/actions/resize/index.js'
+        import 'https://cdn.interactjs.io/v1.9.20/modifiers/index.js'
+        import 'https://cdn.interactjs.io/v1.9.20/dev-tools/index.js'
+        import interact from 'https://cdn.interactjs.io/v1.9.20/interactjs/index.js'
+      
+        interact('.item').draggable({
+          onmove(event) {
+            console.log(event.pageX, event.pageY)
+          },
+        })
+      </script>
+      
+       
+    <!--fontes usadas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--sobre o site / quase como pop up é suposto carregar no X para fechar-->
+    <div class="window" id="windowpopup">
+        <div class="title-bar">
+          <div class="title-bar-text">
+            ⚠️Experimental Portfolio⚠️
+          </div>
+          <div class="title-bar-controls">
+            <button aria-label="Close" onclick="closeWin()"></button>
+          </div>
+        </div>
+        <div class="window-body" style="font-size: 14px;">
+          <p>Welcome to my page! (´-ω-`)</p>
+          <p>Here I tried to recreate the early 2000s cyber web aesthetic with a little of my touch.</p>
+          <p>Have fun and explore my page and check my projects because this is still a mini portfolio xD</p>
+          <img style="width:200px;height:auto;object-fit:contain;" src="https://i.pinimg.com/736x/cd/38/6c/cd386cc74744218a6dcf39ff61f0105f.jpg" alt="funny meme">
+        </div>
+      </div>
+
+      <!-- classe todas porque engloba o ipod com o div a dizer Nostalgia trip-->
+      
+    <div class="todas">
+
+        <!--Leitor de música Ipod-->
+        <div class="leitor">
+            <div class="sombraleitor">
+                <div class="bodydoleitor">
+                   <audio controls></audio>
+                    <div class="ecradoleitor">
+                        <img src="song.gif" alt="videoplayer" >
+                    </div>
+                    <div class="navegadorleitor">
+                        <div class="keys">
+                            <!--butoes/keys do player-->
+                            <span class="menu-btn">MENU</span>
+                            <!--passar a frente -->
+                            <img class="fwd" src="https://cdn2.iconfinder.com/data/icons/snipicons/5000/fast-forward-256.png">
+                                <!--para tras-->
+                            <img class="bkd" src="https://cdn2.iconfinder.com/data/icons/snipicons/5000/fast-backward-128.png">
+                                <!--play e pausa-->
+                                <div class="play-container" onclick="togglePlayPause()">
+                            <img class="play-pause" src="https://cdn2.iconfinder.com/data/icons/snipicons/5000/play-128.png">
+                                 </div>
+                            <div class="play">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="frase">
+            <h1 id="nostalgia"> Nostalgia <br> ✰⋆⁺Trip</h1>
+        </div>
+    </div>
+        <!--imagens draggable/ colagem de objetos e referencias aos anos 2000s e a essa estética-->
+
+        <img src="imagens/cd_1.jpeg"  class="draggable" id="img1" style="top: -130px; left: 300px;rotate:15deg;width:300px">
+        <img src="imagens/cd.png"  class="draggable" id="img2" style="top: 1000px; left: 300px;rotate:-15deg;width:300px ;">
+        <img src="imagens/radio.png"  class="draggable" id="img3" style="top: 320px; left: 380px;rotate:-10deg;">
+        <img src="imagens/tele.png"  class="draggable" id="img4" style="top: 160px; left: 1080px;rotate:0deg;">
+        <img src="imagens/world.gif"  class="draggable" id="img5" style="top:720px; left:80px;rotate:-10deg;width: 100px;">
+        <img src="imagens/anime_desfocada.jpeg"  class="draggable" id="img6" style="top: -190px; left: 900px;rotate:-15deg;">
+        <img src="imagens/camara.png"  class="draggable" id="img7" style="top: 1500px; left: 860px;rotate: 20deg;">
+        <img src="imagens/comp.png"  class="draggable" id="img8" style="top: 1300px; left: 300px;rotate:-15deg;">
+        <img src="imagens/pokemon.gif"  class="draggable" id="img9" style="top: 1820px; left: 780px;rotate:-10deg;width: 200px;">
+        <img src="imagens/sonic_game.jpeg"  class="draggable" id="img10" style="top: 960px; left: 60px;rotate:20deg;width: 200px;">
+        <img src="imagens/pokemon2.jpeg"  class="draggable" id="img11" style="top:720px; left:380px;rotate:-10deg;width:250px ;">
+        <img src="imagens/toma.png"  class="draggable" id="img12" style="top: 1900px; left: 300px;rotate:15deg;">
+        <img src="imagens/nintendo.gif"  class="draggable" id="img13" style="top: 520px; left: 780px;width:300px;">
+        <img src="imagens/sonic.png"  class="draggable" id="img14" style="top: 780px; left: 1000px;rotate:-15deg;width:250px;">
+        <img src="imagens/rei.jpeg"  class="draggable" id="img15" style="top: 1350px; left:1100px;rotate:-5deg;width:250px;">        
+        
+    
+    <div id="textosobremim">
+        <h4>Hi! My name is Ana Rodrigues and I am currently pursuing my Masters degree.
+            I am currently studying Multimedia Design at the University of Coimbra.
+            My main areas of focus are web design and illustration.
+            My goal is to combine and blend these two areas of interest.
+        </h4>
+    </div>
+
+
+
+ <div class="todas">
+
+    <div class="frase1">
+    <h1 id="nostalgia_copias"> Ana ✰⋆⁺<br>Rodrigues </h1>
+    </div>
+
+</div>
+
+
+<!--projetos meus -->
+<div class="maedasjanelas" style="display:flex ;margin-bottom:80px;justify-content: center;align-items: center;flex-wrap:wrap;">
+    <!--primeiro projeto-->
+    <div class="window" id="window1" style="width: 350px;height:480px;position:relative; display: inline-block;box-sizing: border-box; margin: 15px">
+    <div class="title-bar">
+      <div class="title-bar-text">Project 1 - Earth Bound</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize" onclick="openWin1()"></button>
+        <button aria-label="Close" onclick="closeWin2()"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <img style="width:300px;height:auto;object-fit:contain;" src="https://i.pinimg.com/736x/be/87/e7/be87e71aeaea5c58f80298d36cf9a7d2.jpg">
+    </div>
+    </div>
+
+    <!--2 projeto - ilustrações vai para o instagram de arte no maximize-->
+    <div class="window" id="window2" style="width: 450px;height:480px;position:relative; display: inline-block;box-sizing: border-box; margin: 15px;">
+        <div class="title-bar">
+          <div class="title-bar-text">Project 2 - Illustrations</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize" onclick="openWin2()"></button>
+            <button aria-label="Close" onclick="closeWin3()"></button>
+          </div>
+        </div>
+        <div class="window-body">
+            <p>Click on the maximize button to see more illustrations!</p>
+          <img style="width:400px;height:auto;object-fit:contain;" src="https://i.pinimg.com/564x/43/22/62/43226266ed7a9669bc75efceee04c736.jpg">
+        </div>
+      </div>
+
+       <!--3 projeto - eco journey game -->
+    <div class="window" id="window3" style="width: 450px;height:480px;position:relative; display: inline-block;box-sizing: border-box; margin: 15px">
+        <div class="title-bar">
+          <div class="title-bar-text">Project 3 - Eco Journey</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize" onclick="openWin3()"></button>
+            <button aria-label="Close" onclick="closeWin4()"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <img style="width:360px;height:auto;object-fit:contain;margin-bottom: 10px;" src="https://i.pinimg.com/736x/72/cb/0d/72cb0d701823993554108dde9e1f5566.jpg">
+          <img style="width:360px;height:auto;object-fit:contain;" src="https://i.pinimg.com/736x/83/44/56/834456a24b745e3c21ec5a01980564c4.jpg">
+
+        </div>
+      </div>
+</div>
+<!-- botão de dar refresh na página caso se feche um separador por acidente ou todos-->
+        <button type="submit" onClick="refreshPage()" style="width: 150px;">Refresh  Page</button>
+   
+</body>
+
+</html>
